@@ -222,12 +222,7 @@ async function startQuiz() {
     }
 }
 function restartQuiz() {
-    currentQuestionIndex = 0;
-    scoree = 0;
-    answerDisabled = false;
-    getnewques();
-    resultscreen.classList.remove("active");
-    startQuiz.classList.add("active");
+    window.location.reload();
 }
 
 function showQuestion() {
